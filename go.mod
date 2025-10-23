@@ -1,3 +1,3 @@
 module github.com/sjnp/learn-go-with-tests
 
-go 1.24.1
+go 1.25.3
