@@ -15,13 +15,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Create mod cache directory
+      run: mkdir -p /home/runner/go/pkg/mod
+
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
         go-version: '1.25.x'
-
-    - name: Create mod cache directory
-      run: mkdir -p /home/runner/go/pkg/mod
 
     - name: Display Go version
       run: go version
