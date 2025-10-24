@@ -4,7 +4,7 @@ import "strings"
 
 func Repeat(char string, times int) string {
 	result := ""
-	for _ = range times {
+	for range times {
 		result += char
 	}
 
@@ -13,7 +13,7 @@ func Repeat(char string, times int) string {
 
 func FastRepeat(char string, times int) string {
 	var result strings.Builder
-	for _ = range times {
+	for range times {
 		result.WriteString(char)
 	}
 
